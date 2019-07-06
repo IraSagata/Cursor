@@ -1,78 +1,52 @@
-// 1
+// 1 Build a function that does currency converter from USD to UAH (1 USD = 8 UAH)
 
-function convert(amount)
-{ 
+function convert(amount) { 
   return amount * 8;
 }
-
 var usd = 5;
+
 console.log("#1");
 console.log(usd +  " USD" + " = " + convert(usd) + " UAH");
 
-// 2
+// 2 A function which returns reversed string.
 
-function reverse(str)
-{
-  var rts = '';
-  
-  for (var i = str.length; i > 0; i=i-1 )
-  {    
-    rts += str[i-1];
+function reverse(str) {
+  var reversedString = ''; 
+
+  for (var i = str.length; i > 0; i=i-1 ) {    
+    reversedString += str[i-1];
   }  
-  
-  return rts;
+
+  return reversedString;
 }
 
 var myString = 'abcd';
-console.log("#2");
 console.log("my string [" + myString + "], reverse [" + reverse(myString) + "]");
 
-// 3
-function print(x)
-{
-  var n = '';
-  
-  while ( x > 0 ) 
-  
-    n = n + '#';
-    x = x - 1;
-  
-  return n;
+// 3 A function which prints the stair picture of size n
+
+function printStairs(length) { 
+  for (var i = 1; i <= length; i++ ) 
+    console.log ("#".repeat(i)); 
 }
+printStairs(3);
 
-function printStairs(n) 
-{ 
-  var i = 0;
-  
-  while ( n > i ) 
-  
-    i = i + 1;
-    console.log ( print(i) ); 
-  
-}
+//4 A function which returns total sum of a range
 
-printStairs(0);
-
-//#
-//##
-//###
-
-//4
-function sumRange(start, end)
-{
+function sumRange(start, end) {
   let total = 0;
+
   for (i = 0;start+i<=end;i = i + 1)
-  
     total = total + (start + i);
-  
+    
   return total;
 }
 console.log(sumRange(2, 4)) // 9
 console.log(sumRange(-1, 3)) // 5
 
+//4 (another version)
 
-function sumRange(start, end)
-{
+function sumRange(start, end) {
   if (start <= end)
     return end*(end+1)/2 - start*(start-1)/2;
   else
@@ -82,26 +56,26 @@ console.log(sumRange(2, 4)) // 9
 console.log(sumRange(-1, 3)) // 5
 
 
-//5
-function min(a, b, c) 
-{
-  return (a < b) ? 
-                ( a < c ? a : c) 
-              : ( b < c ? b : c);
-  
+//5 Write a function which returns the smallest of three numbers.
+
+function min(a, b, c) {
+  var minValue = c;
+  if (a < b && a < c) minValue = a;
+  if (b < a && b < c) minValue = b;
+  return minValue;
+}
 console.log(min(10, 5, 11)) // 5
 console.log(min(3, 8, 4)) // 3
 
 
 
+//6 A function which prints the pyramid picture of size n
 
-//6
-function printPyramid(n) 
-{
+function printPyramid(n) {
     for ( i = 0; i < n; i++) {
-        let a = "#".repeat(i * 2 + 1);
-        let b = " ".repeat(n - (i + 1));
-        console.log(b + a);
-    
+        let stars = "#".repeat(i * 2 + 1);
+        let emptySpace = " ".repeat(n - (i + 1));
+        console.log(emptySpace + stars);
+    } 
 }
 printPyramid(3)
