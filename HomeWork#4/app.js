@@ -29,6 +29,7 @@ function printStairs(length) {
   for (var i = 1; i <= length; i++ ) 
     console.log ("#".repeat(i)); 
 }
+
 printStairs(3);
 
 //4 A function which returns total sum of a range
@@ -41,6 +42,7 @@ function sumRange(start, end) {
     
   return total;
 }
+
 console.log(sumRange(2, 4)) // 9
 console.log(sumRange(-1, 3)) // 5
 
@@ -52,6 +54,7 @@ function sumRange(start, end) {
   else
     return 0;
 }
+
 console.log(sumRange(2, 4)) // 9
 console.log(sumRange(-1, 3)) // 5
 
@@ -64,6 +67,7 @@ function min(a, b, c) {
   if (b < a && b < c) minValue = b;
   return minValue;
 }
+
 console.log(min(10, 5, 11)) // 5
 console.log(min(3, 8, 4)) // 3
 
@@ -75,6 +79,7 @@ function printPyramid(n) {
     for ( i = 0; i < n; i++) {
         let stars = "#".repeat(i * 2 + 1);
         let emptySpace = " ".repeat(n - (i + 1));
+        
         console.log(emptySpace + stars);
     } 
 }
