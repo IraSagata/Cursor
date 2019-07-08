@@ -41,7 +41,6 @@ body {
     height: 100px;
 }
 .site-logo__paragraph {
-   /* margin-top: 10px; */
    line-height: 2;
    font-family: 'Montserrat', sans-serif;
    text-transform: uppercase;
@@ -156,7 +155,7 @@ body {
 .header-img {
     display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto;
 }
 
 /* main */
@@ -285,6 +284,7 @@ h6 {
 .img-block {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .article-padding {
     padding-bottom: 56px;
@@ -347,6 +347,7 @@ h6 {
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 /* quality */
 .quality-section-header {
@@ -426,6 +427,7 @@ h6 {
     align-items: center;
     align-content: space-between;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 .form-input {
     width: 326px;
