@@ -30,9 +30,12 @@
     <header class="page-header">
         <section class="container header-section">
             <article>
-                <h2 class="page-header-title"><b>ВІДЕОДОВІДНИК -</b> <br>
-                <span class="page-header__text-yellow">АВТОНОВИНКА 2017</span> РОКУ<h2>
+                <h2 class="page-header-title">ВІДЕОДОВІДНИК - <br><span class="page-header__text-yellow">АВТОНОВИНКА 2017</span> РОКУ</h2>
                 <p class="header-title-paragraph"><span class="page-header__text-yellow">Замовте</span> відеопарковщик <br><span class="page-header__text-yellow">до кінця дня і получіть<br> в подарунок</span> сонцезахисний капелюшок</p>
+                <div class="header__price-img">
+                  <img src="/img/center_01_PNG.png" class="header-img header-img__first" alt="зеркало" height="177" width="403">
+                  <img src="/img/price.png" class="header-img__second" alt="ціна" height="155" width="156">
+                </div>
                 <div class="timer">
                     <div class="timer-section timer-background-colore">
                         <span>1</span>
@@ -61,14 +64,8 @@
                         <span>6</span>
                     </div>
                 </div> 
-                    <button type="button" class="header-button">замовити</button>
-            </article>
-            <article>
-                <div class="header__price-img">
-                  <img src="/img/center_01_PNG.png" class="header-img header-img__first" alt="зеркало" height="177" width="403">
-                  <img src="/img/price.png" class="header-img__second" alt="ціна" height="155" width="156">
-                </div>
-            </article>
+                <div class="first__button"><button type="button" class="header-button">замовити</button></div>  
+            </article>  
         </section>
       </header>
       <main class="container">
@@ -199,7 +196,7 @@
         <section>
             <h3><span class="page-header__text-yellow">як ви</span> економите?</h3>
             <ul class="services-page-article article-padding">
-                <li>
+                <li class="services-page-article__item">
                     <div>
                         <span class="econom-section-paragraph">Ремонт бампера коштує від</span>
                         <h6><span class="page-header__text-yellow">6000</span> гривень</h6>
@@ -212,7 +209,7 @@
                         <img src="./img/ekonom/eco3.jpg" class="img__eco-two" alt="mirror" height="142" width="188">
                     </div>
                 </li>
-                <li>
+                <li class="services-page-article__item">
                      <div>
                          <span class="econom-section-paragraph">відеопарктронік з подарунком коштує</span>
                          <h6>всього<span class="page-header__text-yellow">4560</span> гривень</h6>
@@ -231,19 +228,15 @@
         </section>
         <section>
             <h3><span class="page-header__text-yellow">відгуки про наш</span> ВІДеОПАРКТРОНІКА</h3>
-            <ul class="section-rewiev">
-               <li class="section-rewiev__items section-rewiev__media"><a><img src="./img/slider/2.jpg" alt="slider" width="49" height="63"></a></li>
-               <li class="section-rewiev__items">
+            <div class="section-rewiev__wrapper">
+               <button class="slider-control slider-prew"><img src="./img/slider/2.jpg" alt="slider" width="49" height="63"></button>
+               <div class="section-rewiev">
+               <div class="section-rewiev__items">
                   <div class="slider-img">
                       <img src="./img/slider/slider1.jpg" alt="slider" height="210" width="280">
                   </div>
-                  <div class="slider-button">
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                  </div>
-                </li>
-                <li class="section-rewiev__items">
+               </div>
+                <div class="section-rewiev__items">
                     <p class="section-rewiev__paragraph">Lorem ipsum dolor oloremque praesentium? Sed cupiditate reiciendis aliquid rerum suscipit! Suscipit dicta consequuntur debitis aut saepe excepturi aspernatur perferendis a facere, ullam dignissimos unde ipsum deleniti eaque libero omnis id enim corrupti quod sunt. Officiis nobis voluptas, recusandae quibusdam minus sed ratione quae unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum cum nam, nesciunt consequatur adipisci ex mollitia? Quam corrupti a vitae aliquam dolores nam, accusamus totam laborum autem inventore odit?</p>
                         <div class="user-rewiev">
                            <img src="/img/slider/ava1.png" alt="ava" class="">
@@ -252,10 +245,15 @@
                                <span class="section-rewiev__span-italic">г.Дніпропетровськ</span>
                            </div>
                        </div>
-                  </li>
-                  <li class="section-rewiev__items section-rewiev__media"><a><img src="./img/slider/1.jpg" alt=""></a></div>
-                  </li>
-                  
+                </div>
+                </div>
+                <div class="slider-button">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+                <button class="slider-control slider-next"><img src="./img/slider/1.jpg" alt="slider-button"></button>
+            </div>
         </section>
         <section class="text">
             <h3>Доставка і гарантія</h3>
@@ -308,7 +306,7 @@
       <section>
           <h3>замовте свій відеопарктронік <span class="page-header__text-yellow"> до кінця дня</span><br> і <span class="page-header__text-yellow"> получіть в подарунок</span>  якесь зеркало</h3>
           <article class="last-section__delivery">
-              <div>
+              <div class="last-section__delivery-wrapper">
                   <img src="/img/center_01_PNG.png" class="header-img" alt="зеркало" height="177" width="403">
                   <div class="last-section__delivery-img">
                     <img src="/img/mir-last.jpg" alt="mirror" class="img__mirror" width="251" height="167">
@@ -317,7 +315,7 @@
                   </div>
               </div>
               
-              <div>
+              <div class="last-section__delivery-wrapper">
                   <div class="input-form-left">
                       <input type="text" class="form-input" placeholder="Введіть ім'я *" pattern="[A-Za-z]{2,60}" required>
                       <input type="number" class="form-input" placeholder="+7(__) ___ __ __*" required>
