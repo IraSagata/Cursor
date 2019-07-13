@@ -95,13 +95,14 @@
     }
     .characteristic-section-img {
         padding-right: 0;
+        margin: 0 auto;
     }
     .paragraph-underling::after {
         margin-top: 0;
     }
     .section__img {
         height: auto;
-        width: 240px;
+        max-width: 240px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -175,7 +176,7 @@
         width: auto;
     }
     .img__mirror {
-        height: 160px;
+        /* height: 160px; */
         width: auto;
         left: 19%;
     }
@@ -187,6 +188,10 @@
     } 
     .img__plus {
         left: 0;
+    }
+    .last-section__delivery {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
     }
     .last-section__delivery-img {
         width: auto;
@@ -207,6 +212,9 @@
     }
     .services-section__item {
         margin: 0 auto;
+    }
+    .page-footer {
+        min-height: 50px;
     }
     
 }
