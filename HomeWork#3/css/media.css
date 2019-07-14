@@ -82,7 +82,11 @@
     h3::after {
         width: 100px;
         margin-top: 20px;
-     }
+     } 
+    .characteristic__section-list {
+        width: 95%;
+        padding-left: 5%
+    }
      .characteristic__section-title {
         font-size: 12px;
      }
@@ -107,16 +111,16 @@
         margin-bottom: 20px;
     }
     .img__eco-women {
-        height: 180px;
-        width: 280px;
+        height: auto;
+        width: 100%;
     }
     .img__eco-one {
-        width: 150px;
-        height: 83px;
+        width: 50%;
+        height: auto;
     }
     .img__eco-two {
-        width: 110px;
-        height: 83px;
+        width: 40%;
+        height: auto;
     }
     
     .econom-section-paragraph {
@@ -130,8 +134,8 @@
 
     }
     .section-img__first {
-        height: 130px;
-        width: 280px;
+        height: auto;
+        width: 100%;
     }
     .article-padding {
         padding-bottom: 30px;
