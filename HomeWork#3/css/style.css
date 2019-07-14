@@ -41,7 +41,8 @@ body {
     align-items: center;
     text-decoration: none;
     list-style-type: none;
-    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .site-logo__paragraph {
    line-height: 2;
