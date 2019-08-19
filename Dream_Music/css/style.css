@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.sign-in {
+    background-image: url('../img/img/background.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sing-in-block {
+    padding-top: 170px;
+}
+form {
+    border-radius: 16px;
+    background-color: rgb(232, 235, 238, 0.8);
+    padding: 36px;
+}
+.jumbotron {
+    background-color: rgb(232, 235, 238, 0.8); 
+}
+.navbar-light .navbar-brand {
+    color: red;
+}
+main {
+    margin-top: 100px;
+}
